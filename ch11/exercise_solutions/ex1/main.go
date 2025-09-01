@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"io"
 	"os"
@@ -44,8 +43,7 @@ func printUDHR(lang string) error {
 			return err
 		}
 	} else {
-		return errors.New(
-			fmt.Sprintf("languege %s is not support", lang))
+		return fmt.Errorf("languege %s is not support", lang)
 	}
 
 	return nil
