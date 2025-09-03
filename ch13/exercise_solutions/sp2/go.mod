@@ -1,4 +1,4 @@
-module github.com/go_examples/ch12/exercise_solutions/ex1
+module github.com/go_examples/ch13/exercise_solutions/ex1
 
 go 1.25.0
 
