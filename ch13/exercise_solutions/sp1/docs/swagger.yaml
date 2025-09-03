@@ -1,0 +1,39 @@
+basePath: /
+definitions:
+  main.TimeOut:
+    properties:
+      day_of_month:
+        type: integer
+      day_of_week:
+        type: string
+      hour:
+        type: integer
+      minute:
+        type: integer
+      month:
+        type: string
+      second:
+        type: integer
+      year:
+        type: integer
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: これはサンプルAPIです
+  title: Example API
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/main.TimeOut'
+      summary: 時刻を返す
+swagger: "2.0"
